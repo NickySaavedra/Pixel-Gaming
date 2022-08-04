@@ -1,0 +1,201 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerGrid{
+
+}
+.headerPadre{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulo titulo login"
+                         "inicio inicio inicio";
+    justify-content: space-between;
+}
+
+.flexNav{
+    grid-area: login;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 5px;
+    
+}
+
+.tituloPixel{
+    grid-area: titulo;
+    font-size:larger ;
+    color: rgb(168, 130, 238);
+    font-family:'Space Grotesk', sans-serif;
+}
+
+.flexMenu{
+    grid-area: inicio;
+    display: flex;
+    justify-content: center;
+    list-style: none ;
+    gap: 20%;
+    background-color: rgb(249, 240, 255);
+    margin-bottom: 25px;
+
+}
+
+/*Main*/
+
+.imgProm{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.prodDest{
+    text-align: center;
+    background-color: grey;
+    margin-bottom: 25px;
+}
+
+.flexProd{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:" 1img 2img 3img 4img";
+    justify-content: center;
+    
+}
+
+.productos{
+    width: 50%;
+    
+}
+.img1{
+    grid-area: 1img ;
+    justify-self: center;
+}
+
+.img2{
+    grid-area: 2img;
+    justify-self: center;
+}
+
+.img3{
+    grid-area: 3img;
+    justify-self: center;
+}
+
+.img4{
+    grid-area: 4img;
+    justify-self: center;
+}
+
+/*footer*/
+
+
+.footerPadre{
+    display: grid; 
+    grid-template-columns: 0.5fr 1fr 2fr 2fr ;
+    grid-template-rows: auto ; 
+    grid-template-areas:"mapa textomapa redes copyright" ;
+    background-color: grey;
+}
+
+.mapa{
+    grid-area: mapa;
+    width: 100%;
+    height: 100%;
+}
+
+
+.parrafoFooter{
+    grid-area: textomapa;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: small;
+    text-align: left;
+
+
+    
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminos{
+    grid: copyright;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/**Login**/
+
+.flexMain{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212, 205, 240);
+    align-items: center;
+    height: 735px;
+
+}
+
+.inicioSesion{
+    border: solid 2px black;
+    width: 400px;
+    background: rgb(178, 162, 236);
+    border-radius: 10px;
+}
+
+.inicioSesion h2{
+    text-align: center;
+    padding:20px ;
+}
+
+form .username{
+     position: relative;
+     margin: 30px 0;
+}
+
+
+.username{
+    padding-left: 20px;
+    width: 150px;
+
+}
+
+form .contrasena{
+    position: relative;
+    margin: 30px 0;
+}
+.contrasena{
+    padding-left: 20px;
+    width: 150px;
+}
+
+.olvidaste{
+    position: relative;
+    margin: 20px;
+}
+
+.iniciarSesion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-bottom: 20px;
+}
