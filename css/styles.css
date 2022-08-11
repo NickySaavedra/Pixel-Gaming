@@ -11,10 +11,9 @@
 .headerPadre{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "titulo titulo login"
-                         "inicio inicio inicio";
-    justify-content: space-between;
+    grid-template-rows: 1fr;
+    grid-template-areas: "titulo titulo login"; 
+
 }
 
 .flexNav{
@@ -27,21 +26,31 @@
     
 }
 
+.pixelFoto{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
 .tituloPixel{
+    display: flex;
     grid-area: titulo;
     font-size:larger ;
     color: rgb(168, 130, 238);
-    font-family:'Space Grotesk', sans-serif;
+    font-family: 'Silkscreen', cursive;
+    align-items: center;
+    
 }
 
 .flexMenu{
-    grid-area: inicio;
+
     display: flex;
     justify-content: center;
     list-style: none ;
     gap: 20%;
     background-color: rgb(249, 240, 255);
     margin-bottom: 25px;
+    font-size: larger;
 
 }
 
